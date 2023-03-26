@@ -1,0 +1,11 @@
+OPENQASM 2.0;
+include "qelib1.inc";
+gate r(param0,param1) q0 { u3(5.054447723568347,2.817715233498067,-2.817715233498067) q0; }
+gate gate_P30 q0,q1,q2,q3,q4 { sdg q0; sdg q0; y q1; u3(2.753804399988695,0.4117633679221698,0.46112171276831626) q1; r(5.054447723568347,4.388511560292963) q2; s q2; ch q3,q4; h q3; h q4; }
+qreg q[5];
+creg c[3];
+cx q[1],q[2];
+gate_P30 q[0],q[1],q[2],q[3],q[4];
+measure q[0] -> c[0];
+measure q[1] -> c[1];
+measure q[2] -> c[2];
