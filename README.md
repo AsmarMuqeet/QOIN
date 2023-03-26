@@ -38,7 +38,7 @@ The results for each Research question is presented in the /results subdirectory
 # Evaluate Research Questions:
 To evaluate all research questions follow these steps
 
-1. Donwload the pretrained networks [Here](https:www.shorturl.at/movDN)
+1. Donwload the pretrained networks [Here](https://shorturl.at/movDN)
 2. Extract the data in the root folder of each experiment
     
     Experiment 1.rar ---> /Experiment_1/
