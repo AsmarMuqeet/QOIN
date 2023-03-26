@@ -1,4 +1,4 @@
-# QUIN: Making Quantum Testing Noise Aware
+# QUIN: Making Quantum Software Testing Noise-Aware
 This repository contains the code necessary to reproduce the results of QUIN.
 
 # Installation
