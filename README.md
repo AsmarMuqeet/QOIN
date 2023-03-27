@@ -12,6 +12,7 @@ To insall the python environment following distributuion are required
     1. Clone repository
     2. cd submission
     3  conda env create -f ktrain.yml
+    4. conda activate ktrain
 # Results:
 The results for each Research question is presented in the /results subdirectory in /Experiment_1 and /Experiment_2 directories.
 ## Files related to RQ1 (Expeiment 1):
@@ -30,10 +31,19 @@ The results for each Research question is presented in the /results subdirectory
 
 ## Files related to RQ2 (Expeiment 1):
 1. RQ2B1.png    (Graphical view for test assessment)
-2. RQ2_cases.txt (Summarised cases from Graph and Quality metric (F1-score))
+2. RQ2_statistics_original_programs.csv (Mann-whitney and A12 for original programs)
+3. RQ2_statistics_fault1_programs.csv (Mann-whitney and A12 for faulty programs)
+4. RQ2_statistics_fault2_programs.csv (Mann-whitney and A12 for faulty programs)
+5. RQ2_statistics_fault3_programs.csv (Mann-whitney and A12 for faulty programs)
+6. RQ2_cases.txt (Summarised cases from Graph and Quality metric (F1-score))
 
 ## Files related to RQ2 (Expeiment 2):
 1. RQ2_cases.txt (Summarised cases from Graph and Quality metric (F1-score))
+2. RQ2_statistics_original_programs.csv (Mann-whitney and A12 for original programs)
+3. RQ2_statistics_fault1_programs.csv (Mann-whitney and A12 for faulty programs)
+4. RQ2_statistics_fault2_programs.csv (Mann-whitney and A12 for faulty programs)
+5. RQ2_statistics_fault3_programs.csv (Mann-whitney and A12 for faulty programs)
+6. RQ2_cases.txt (Summarised cases from Graph and Quality metric (F1-score))
 
 # Evaluate Research Questions:
 To evaluate all research questions follow these steps
@@ -47,15 +57,15 @@ To evaluate all research questions follow these steps
 
 3. After extraction you should be able to see pretrained models in /tunning_data
 ### To simply calculate RQs
-    python CalculateRQ1.py
-    python CalculateRQ2.py
-    python CalculateRQ1_B.py (Only Experiment 2)
+    python CalculatingRQ1.py
+    python CalculatingRQ2.py
+    python CalculatingRQ1_B.py (Only Experiment 2)
 ### To Re-Evaluate RQs on new data
     python EvaluationRQ1.py
     python EvaluationRQ2.py
-    python CalculateRQ1.py
-    python CalculateRQ2.py
-    python CalculateRQ1_B.py (Only Experiment 2)
+    python CalculatingRQ1.py
+    python CalculatingRQ2.py
+    python CalculatingRQ1_B.py (Only Experiment 2)
 > **_NOTE:_** Evaluating RQs on new data might take several days, Depeneding on the system specifications.
 
 ### To Run the experiment from scratch:
