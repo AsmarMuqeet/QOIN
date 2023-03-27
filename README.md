@@ -2,7 +2,7 @@
 This repository contains the code necessary to reproduce the results of QUIN.
 
 # Installation
-Currently the reposritory only supports linxu distributions and is tested on Ubuntu 20 and windows (WSL2).
+Currently the reposritory only supports linux distributions and is tested on Ubuntu 20 and windows (WSL2).
 To insall the python environment following distributuion are required
 1. Anaconda Python distribution is required [here](https://www.anaconda.com/products/distribution):
 2. R distribution [here](https://cran.r-project.org/bin/linux/ubuntu/fullREADME.html)
