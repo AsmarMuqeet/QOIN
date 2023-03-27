@@ -461,6 +461,10 @@ for program in index.keys():
 
 # In[12]:
 
+stat_data_original.round(2).to_csv("results/RQ2_statistics_original_programs.csv",index=False)
+stat_data_mutant1.round(2).to_csv("results/RQ2_statistics_faulty1_programs.csv",index=False)
+stat_data_mutant2.round(2).to_csv("results/RQ2_statistics_faulty2_programs.csv",index=False)
+stat_data_mutant3.round(2).to_csv("results/RQ2_statistics_faulty3_programs.csv",index=False)
 
 stat_data_original
 
@@ -632,62 +636,62 @@ for program in df["Programs"].unique():
         
         
 
-for program in df["Programs"].unique():
-    ideal = df.loc[(df.Type == "Ideal") & (df.Programs == program)]["Score"].values[0]
-    filtered = df.loc[(df.Type == "Filtered") & (df.Programs == program)]["Score"].values[0]
-    proc = program.split()[0]
-    if "F1" in program:
-        pvalue = stat_data_mutant1.loc[stat_data_mutant1.Program==proc]["Pvalue"].values[0]
-        mag = stat_data_mutant1.loc[stat_data_mutant1.Program==proc]["Mag"].values[0]
-        if pvalue<0.05:
-            if mag=="large":
-                plt.annotate("   ({},large)".format("<0.05"),xy=(ideal+1.5,label[program]),
-                             xytext=(filtered-1,label[program]),xycoords="data",
-                             horizontalalignment='left',fontsize=9)
-            else:
-                plt.annotate("   ({})".format("<0.05"),xy=(ideal+1.5,label[program]),
-                             xytext=(filtered-1,label[program]),xycoords="data",
-                             horizontalalignment='left',fontsize=9)
+# for program in df["Programs"].unique():
+#     ideal = df.loc[(df.Type == "Ideal") & (df.Programs == program)]["Score"].values[0]
+#     filtered = df.loc[(df.Type == "Filtered") & (df.Programs == program)]["Score"].values[0]
+#     proc = program.split()[0]
+#     if "F1" in program:
+#         pvalue = stat_data_mutant1.loc[stat_data_mutant1.Program==proc]["Pvalue"].values[0]
+#         mag = stat_data_mutant1.loc[stat_data_mutant1.Program==proc]["Mag"].values[0]
+#         if pvalue<0.05:
+#             if mag=="large":
+#                 plt.annotate("   ({},large)".format("<0.05"),xy=(ideal+1.5,label[program]),
+#                              xytext=(filtered-1,label[program]),xycoords="data",
+#                              horizontalalignment='left',fontsize=9)
+#             else:
+#                 plt.annotate("   ({})".format("<0.05"),xy=(ideal+1.5,label[program]),
+#                              xytext=(filtered-1,label[program]),xycoords="data",
+#                              horizontalalignment='left',fontsize=9)
                 
-    elif "F2" in program:
-        pvalue = stat_data_mutant2.loc[stat_data_mutant2.Program==proc]["Pvalue"].values[0]
-        mag = stat_data_mutant2.loc[stat_data_mutant2.Program==proc]["Mag"].values[0]
-        if pvalue<0.05:
-            if mag=="large":
-                plt.annotate("   ({},large)".format("<0.05"),xy=(ideal+1.5,label[program]),
-                             xytext=(filtered-1,label[program]),xycoords="data",
-                             horizontalalignment='left',fontsize=9)
-            else:
-                plt.annotate("   ({})".format("<0.05"),xy=(ideal+1.5,label[program]),
-                             xytext=(filtered-1,label[program]),xycoords="data",
-                             horizontalalignment='left',fontsize=9)
-    elif "F3" in program:
-        pvalue = stat_data_mutant3.loc[stat_data_mutant3.Program==proc]["Pvalue"].values[0]
-        mag = stat_data_mutant3.loc[stat_data_mutant3.Program==proc]["Mag"].values[0]
-        if pvalue<0.05:
-            if mag=="large":
-                plt.annotate("   ({},large)".format("<0.05"),xy=(ideal+1.5,label[program]),
-                             xytext=(filtered-1,label[program]),xycoords="data",
-                             horizontalalignment='left',fontsize=9)
-            else:
-                plt.annotate("   ({})".format("<0.05"),xy=(ideal+1.5,label[program]),
-                             xytext=(filtered-1,label[program]),xycoords="data",
-                             horizontalalignment='left',fontsize=9)
-    else:
-        pvalue = stat_data_original.loc[stat_data_original.Program==proc]["Pvalue"].values[0]
-        mag = stat_data_original.loc[stat_data_original.Program==proc]["Mag"].values[0]
-        if pvalue<0.05:
-            if mag=="large":
-                plt.annotate("   ({},large)".format("<0.05"),xy=(ideal+1.5,label[program]),
-                             xytext=(filtered-1,label[program]),xycoords="data",
-                             horizontalalignment='left',fontsize=9)
-            else:
-                plt.annotate("   ({})".format("<0.05"),xy=(ideal+1.5,label[program]),
-                             xytext=(filtered-1,label[program]),xycoords="data",
-                             horizontalalignment='left',fontsize=9)
+#     elif "F2" in program:
+#         pvalue = stat_data_mutant2.loc[stat_data_mutant2.Program==proc]["Pvalue"].values[0]
+#         mag = stat_data_mutant2.loc[stat_data_mutant2.Program==proc]["Mag"].values[0]
+#         if pvalue<0.05:
+#             if mag=="large":
+#                 plt.annotate("   ({},large)".format("<0.05"),xy=(ideal+1.5,label[program]),
+#                              xytext=(filtered-1,label[program]),xycoords="data",
+#                              horizontalalignment='left',fontsize=9)
+#             else:
+#                 plt.annotate("   ({})".format("<0.05"),xy=(ideal+1.5,label[program]),
+#                              xytext=(filtered-1,label[program]),xycoords="data",
+#                              horizontalalignment='left',fontsize=9)
+#     elif "F3" in program:
+#         pvalue = stat_data_mutant3.loc[stat_data_mutant3.Program==proc]["Pvalue"].values[0]
+#         mag = stat_data_mutant3.loc[stat_data_mutant3.Program==proc]["Mag"].values[0]
+#         if pvalue<0.05:
+#             if mag=="large":
+#                 plt.annotate("   ({},large)".format("<0.05"),xy=(ideal+1.5,label[program]),
+#                              xytext=(filtered-1,label[program]),xycoords="data",
+#                              horizontalalignment='left',fontsize=9)
+#             else:
+#                 plt.annotate("   ({})".format("<0.05"),xy=(ideal+1.5,label[program]),
+#                              xytext=(filtered-1,label[program]),xycoords="data",
+#                              horizontalalignment='left',fontsize=9)
+#     else:
+#         pvalue = stat_data_original.loc[stat_data_original.Program==proc]["Pvalue"].values[0]
+#         mag = stat_data_original.loc[stat_data_original.Program==proc]["Mag"].values[0]
+#         if pvalue<0.05:
+#             if mag=="large":
+#                 plt.annotate("   ({},large)".format("<0.05"),xy=(ideal+1.5,label[program]),
+#                              xytext=(filtered-1,label[program]),xycoords="data",
+#                              horizontalalignment='left',fontsize=9)
+#             else:
+#                 plt.annotate("   ({})".format("<0.05"),xy=(ideal+1.5,label[program]),
+#                              xytext=(filtered-1,label[program]),xycoords="data",
+#                              horizontalalignment='left',fontsize=9)
                 
 
-plt.plot([], [], '.',c="black", label="(Pvalue, effect size)")
+# plt.plot([], [], '.',c="black", label="(Pvalue, effect size)")
 plt.plot([], [], '-->',c="orange", label="Increase score")
 plt.plot([], [], '-->',c="#4F7942", label="Decrease score")
 plt.legend(bbox_to_anchor =(0.5, 1.15), ncol = 3,loc=9)

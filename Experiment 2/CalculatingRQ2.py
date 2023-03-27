@@ -353,6 +353,10 @@ for program in index.keys():
 
 # In[13]:
 
+stat_data_original.round(2).to_csv("results/RQ2_statistics_original_programs.csv",index=False)
+stat_data_mutant1.round(2).to_csv("results/RQ2_statistics_faulty1_programs.csv",index=False)
+stat_data_mutant2.round(2).to_csv("results/RQ2_statistics_faulty2_programs.csv",index=False)
+stat_data_mutant3.round(2).to_csv("results/RQ2_statistics_faulty3_programs.csv",index=False)
 
 stat_data_original
 
