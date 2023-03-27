@@ -18,6 +18,8 @@ Steps:
     3  conda env create -f ktrain.yml
     4. conda activate ktrain
 # Results:
+> **_NOTE:_** The Experiment 1 directory is for Real-world programs and Experiment 2 directory is for 1000 artificial programs.
+
 The results for each Research question is presented in the /results subdirectory in /Experiment_1 and /Experiment_2 directories.
 ## Files related to RQ1 (Expeiment 1):
 1. RQ1_HL_BP.csv  (Backend aspect)
