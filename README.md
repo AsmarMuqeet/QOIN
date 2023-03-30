@@ -1,5 +1,5 @@
 # QOIN: Noise-Aware Quantum Software Testing
-This repository contains the code necessary to reproduce the results of QUIN.
+This repository contains the code necessary to reproduce the results of QOIN.
 
 # Installation
 Currently the reposritory only supports linux distributions and is tested on Ubuntu 20 and windows (WSL2).
