@@ -95,12 +95,13 @@ To evaluate all research questions, follow these steps for each Library (Qiskit,
 	
 ### To get final merged results:
 Use the jupyter notebooks presented in QOIN folder
-    calculate RQ1 merged (Experiment 1).ipynb
-    calculate RQ1 merged (Experiment 2).ipynb
-	calculate RQ2 merged (Experiment 1).ipynb
-	calculate RQ2 merged (Experiment 2).ipynb
-	calculate RQ1 merged (Experiment 1).ipynb
-	Analysis.ipynb   (For time and distribution analysis)
-	F1.ipynb         (For Quality metrics precision, recall and F1-score)
+
+    1. calculate RQ1 merged (Experiment 1).ipynb
+    2. calculate RQ1 merged (Experiment 2).ipynb
+	3. calculate RQ2 merged (Experiment 1).ipynb
+	4. calculate RQ2 merged (Experiment 2).ipynb
+	5. calculate RQ1 merged (Experiment 1).ipynb
+	6. Analysis.ipynb   (For time and distribution analysis)
+	7. F1.ipynb         (For Quality metrics precision, recall and F1-score)
 
 > **_NOTE:_** Running the experiment from scratch can take upto several days, depending on the system specifications.
