@@ -14,6 +14,8 @@ Currently the repository is only tested on Linux distribution Ubuntu 20.
 	
 4. Install Rigetti forrest SDk [here](https://docs.rigetti.com/qcs/getting-started/installing-locally) for qvm and quilc
 
+5. Donwload the pretrained networks and data files [Here](https://drive.google.com/drive/folders/1yW1oB9IlYWEh0umZuMceFHPk0BSsKvX5?usp=sharing)
+
 Steps:
 
     1. Clone repository
@@ -21,14 +23,12 @@ Steps:
     3  conda env create -f QOIN.yml
     4. conda activate qoin
 	5. Open two terminals and start Rigetti QVM and quilc
-	   
 	   qvm -S
 	   quilc -P -S
 
 > **_NOTE:_** The Experiment 1 directory is for Real-world programs and Experiment 2 directory is for 1000 artificial programs. Each (Library Qiskit, Cirq, Rigetti) has their own respective Expriment 1 and 2 directories.
-
-	6. Donwload the pretrained networks and data files [Here](https://drive.google.com/drive/folders/1yW1oB9IlYWEh0umZuMceFHPk0BSsKvX5?usp=sharing)
-	7. Extract the data in the root folder of each experiment
+	
+	6. Extract the downloaed data from Dependencies in the root folder of each experiment
     
 		Library-Experiment 1.zip ---> Library/Experiment_1/
     
