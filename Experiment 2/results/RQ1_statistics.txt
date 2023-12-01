@@ -1,2 +1,0 @@
-For Backend Aspect: pvalue = 0.0, Effect size = 0.1119587291559382, Magnitude = Moderate
-For Program Aspect: pvalue = 0.0, Effect size = 0.6451978846072224, Magnitude = Very strong
