@@ -1,0 +1,17 @@
+Original Case1 = 101
+Original Case2 = 0
+Original Case3 = 699
+Faulty Case1 = 181
+Faulty Case2 = 234
+Faulty Case3 = 1985
+Original Significant = 0
+Faulty Significant = 0
+Original Large = 699
+Faulty Large = 2214
+F1_filtered = 0.6031434511668887
+F1_Noise = 0.3989630161505161
+FalsePositives Filtered = 6402.0
+FalseNegatives Filtered = 1173.0
+FalsePositives Noise = 9798.0
+FalseNegatives Noise = 0.0
+Total Inputs = 25600

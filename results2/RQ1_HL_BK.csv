@@ -1,0 +1,27 @@
+,Avg Filter HL,Avg Noise HL,Improv HL
+9q-square,0.28,0.54,48.08
+Almaden,0.04,0.22,81.01
+Boeblingen,0.04,0.21,81.7
+Brooklyn,0.03,0.17,81.15
+Cairo,0.03,0.15,81.29
+Cambridge,0.08,0.31,73.59
+CambridgeAlternativeBasis,0.08,0.31,73.71
+Casablanca,0.03,0.17,82.55
+Guadalupe,0.03,0.16,80.9
+Hanoi,0.03,0.14,80.48
+Jakarta,0.03,0.17,82.42
+Johannesburg,0.04,0.26,84.77
+Kolkata,0.03,0.13,77.99
+Lagos,0.03,0.12,78.23
+Manhattan,0.1,0.27,62.0
+Montreal,0.03,0.15,80.02
+Mumbai,0.03,0.17,83.38
+Nairobi,0.03,0.17,82.45
+Paris,0.03,0.17,80.7
+Rochester,0.13,0.4,67.11
+Singapore,0.04,0.24,82.56
+Sydney,0.03,0.18,82.3
+Toronto,0.09,0.3,69.41
+Washington,0.03,0.16,81.77
+rainbow,0.31,0.58,46.78
+weber,0.31,0.59,46.96

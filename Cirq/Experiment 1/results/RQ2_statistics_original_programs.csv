@@ -1,0 +1,7 @@
+Program,Pvalue,Avalue,Mag
+addition,0.19,0.0,large
+ghz,0.62,0.75,large
+phase,1.0,0.62,small
+qft,0.22,0.0,large
+similarity,0.22,0.0,large
+simon,0.22,1.0,large
