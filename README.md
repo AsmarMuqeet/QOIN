@@ -1,4 +1,4 @@
-# QOIN: Noise-Aware Quantum Software Testing using Machine Learning
+# QOIN: Mitigating Noise in Quantum Software Testing Using Machine Learning
 This repository contains the code necessary to reproduce the results of QOIN.
 
 # Installation
