@@ -1,0 +1,7 @@
+Program,Pvalue,Avalue,Mag
+addition,1.0,0.5,negligible
+ghz,1.0,0.5,negligible
+phase,1.0,0.5,negligible
+qft,1.0,0.0,large
+similarity,1.0,0.0,large
+simon,1.0,0.5,negligible

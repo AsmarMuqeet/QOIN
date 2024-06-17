@@ -1,0 +1,20 @@
+OPENQASM 2.0;
+include "qelib1.inc";
+gate rzx(param0) q0,q1 { h q1; cx q0,q1; rz(4.2228563247812625) q1; cx q0,q1; h q1; }
+qreg q[5];
+creg c[3];
+sx q[1];
+cu1(4.201067634718754) q[0],q[2];
+h q[0];
+s q[0];
+rzx(4.2228563247812625) q[2],q[1];
+ry(2.159627658186997) q[1];
+sxdg q[2];
+x q[3];
+ry(4.827076945256186) q[4];
+crz(3.362637990795237) q[3],q[4];
+sdg q[3];
+rx(5.028274504890382) q[4];
+measure q[0] -> c[0];
+measure q[1] -> c[1];
+measure q[2] -> c[2];
